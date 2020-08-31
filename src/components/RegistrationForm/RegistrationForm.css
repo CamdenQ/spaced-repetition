@@ -1,0 +1,20 @@
+.registration-input {
+	border: none;
+	border-bottom: 1px solid black;
+	width: 75%;
+}
+.registration-form {
+	border: 1px solid black;
+	padding: 5%;
+	text-align: center;
+	margin: 0 10%;
+}
+.registration-footer {
+	margin-top: 5%;
+}
+.registration-footer a {
+	font-size: 11px;
+}
+.registration-footer button {
+	border-radius: 50px;
+}

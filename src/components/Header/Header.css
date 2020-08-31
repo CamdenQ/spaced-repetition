@@ -1,0 +1,17 @@
+header {
+	margin-top: none;
+	background: #1f2121;
+	padding: 2%;
+	padding-bottom: 5%;
+	text-shadow: 1px 1px 1px #333;
+}
+header h1 {
+	text-align: center;
+}
+nav {
+	text-align: center;
+}
+header a {
+	color: white;
+	text-decoration: none;
+}
