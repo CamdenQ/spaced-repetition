@@ -1,0 +1,13 @@
+.dash-section {
+	text-align: center;
+}
+
+.dash-section button {
+	border-radius: 50px;
+}
+
+.dash-section ul {
+	list-style: none;
+	padding-left: 0px;
+	-webkit-padding-start: 0;
+}
