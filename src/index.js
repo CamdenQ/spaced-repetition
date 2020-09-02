@@ -8,12 +8,15 @@ import './setup-icons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { LangProvider } from './contexts/LangContext';
+import { LearningProvider } from './contexts/LearningContext';
 
 ReactDOM.render(
 	<BrowserRouter>
 		<UserProvider>
 			<LangProvider>
-				<App />
+				<LearningProvider>
+					<App />
+				</LearningProvider>
 			</LangProvider>
 		</UserProvider>
 	</BrowserRouter>,

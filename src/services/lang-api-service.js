@@ -12,6 +12,18 @@ const LangService = {
 			!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
 		);
 	},
+
+	getNextWord() {
+		return fetch(`${config.API_ENDPOINT}/language/head`, {
+			method: 'GET',
+			headers: {
+				authorization: `Bearer ${TokenService.getAuthToken()}`,
+				'content-type': 'application/json',
+			},
+		}).then((res) =>
+			!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
+		);
+	},
 };
 
 export default LangService;
