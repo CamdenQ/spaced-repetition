@@ -31,7 +31,7 @@ const LangService = {
 				authorization: `Bearer ${TokenService.getAuthToken()}`,
 				'content-type': 'application/json',
 			},
-			body: { guess: guess },
+			body: JSON.stringify({ guess: guess }),
 		}).then((res) =>
 			!res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
 		);

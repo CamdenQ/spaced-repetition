@@ -13,6 +13,7 @@ export class LangProvider extends Component {
 		super(props);
 		const state = { language: {}, words: [] };
 		this.state = state;
+		//this.updateWords = this.updateWords.bind(this);
 	}
 
 	updateWords() {
@@ -37,6 +38,7 @@ export class LangProvider extends Component {
 		const value = {
 			language: this.state.language,
 			words: this.state.words,
+			updateWords: this.updateWords,
 		};
 		return (
 			<LangContext.Provider value={value}>
