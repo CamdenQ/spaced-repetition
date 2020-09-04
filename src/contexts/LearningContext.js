@@ -6,6 +6,7 @@ const LearningContext = React.createContext({
 	totalScore: '',
 	correctCount: '',
 	incorrectCount: '',
+	guessResponse: {},
 });
 
 export default LearningContext;
@@ -18,9 +19,22 @@ export class LearningProvider extends Component {
 			totalScore: '',
 			correctCount: '',
 			incorrectCount: '',
+			guessResponse: {},
 		};
 		this.state = state;
 	}
+
+	onSubmitGuess(e) {
+		e.preventDefault();
+		const guess = e.target.input.value;
+		LangService.submitGuess(guess).then((res) => {
+			this.setState({
+				guessResponse: res,
+			});
+		});
+		console.log(this.state.guessResponse);
+	}
+
 	componentDidMount() {
 		LangService.getNextWord().then((res) => {
 			this.setState({
@@ -37,6 +51,7 @@ export class LearningProvider extends Component {
 			totalScore: this.state.totalScore,
 			correctCount: this.state.correctCount,
 			incorrectCount: this.state.incorrectCount,
+			guessResponse: this.state.guessResponse,
 		};
 		return (
 			<LearningContext.Provider value={value}>

@@ -1,6 +1,7 @@
 header {
 	margin-top: none;
-	background: #1f2121;
+	background-image: url(../../images/chalkboard.jpeg);
+	/* background: #1f2121; */
 	padding: 2%;
 	padding-bottom: 5%;
 	text-shadow: 1px 1px 1px #333;

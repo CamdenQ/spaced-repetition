@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Word(props) {
-	console.log(props.word);
 	if (!props.word) {
 		return <p>Loading...</p>;
 	}

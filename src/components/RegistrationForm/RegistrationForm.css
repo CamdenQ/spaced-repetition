@@ -1,6 +1,4 @@
 .registration-input {
-	border: none;
-	border-bottom: 1px solid black;
 	width: 75%;
 }
 .registration-form {
@@ -14,6 +12,9 @@
 }
 .registration-footer a {
 	font-size: 11px;
+	color: blue;
+	text-decoration: none;
+	/* letter-spacing: 2%; */
 }
 .registration-footer button {
 	border-radius: 50px;

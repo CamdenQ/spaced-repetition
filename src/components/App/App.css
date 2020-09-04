@@ -1,0 +1,8 @@
+body {
+	background-image: url(../../images/wall.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+html {
+	height: 100%;
+}
