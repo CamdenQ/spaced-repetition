@@ -1,13 +1,20 @@
 .dash-section {
-	text-align: center;
+  text-align: center;
 }
 
 .dash-section button {
-	border-radius: 50px;
+  border-radius: 50px;
 }
 
 .dash-section ul {
-	list-style: none;
-	padding-left: 0px;
-	-webkit-padding-start: 0;
+  list-style: none;
+  padding-left: 0px;
+  -webkit-padding-start: 0;
+}
+
+@media (orientation: landscape) {
+  .dash-ul-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

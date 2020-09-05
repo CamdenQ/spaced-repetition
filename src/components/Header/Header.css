@@ -1,18 +1,23 @@
 header {
-	margin-top: none;
-	background-image: url(../../images/chalkboard.jpeg);
-	/* background: #1f2121; */
-	padding: 2%;
-	padding-bottom: 5%;
-	text-shadow: 1px 1px 1px #333;
+  margin-top: none;
+  background-image: url(../../images/chalkboard.jpeg);
+  /* background: #1f2121; */
+  padding: 2%;
+  padding-bottom: 5%;
+  text-shadow: 1px 1px 1px #333;
 }
 header h1 {
-	text-align: center;
+  text-align: center;
 }
 nav {
-	text-align: center;
+  text-align: center;
 }
 header a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-user-name {
+  color: white;
+  text-align: center;
 }

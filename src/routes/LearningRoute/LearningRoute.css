@@ -1,29 +1,39 @@
 .learn-section {
-	text-align: center;
+  text-align: center;
 }
 
 .learn-section button {
-	border-radius: 50px;
+  border-radius: 50px;
 }
 
 .dash-section ul {
-	list-style: none;
-	padding-left: 0px;
-	-webkit-padding-start: 0;
+  list-style: none;
+  padding-left: 0px;
+  -webkit-padding-start: 0;
 }
 .submit-div {
-	margin-top: 5%;
+  margin-top: 5%;
 }
 
 .learn-section p.small {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .learn-section h3 {
-	margin-bottom: 20%;
-	margin-top: 10%;
+  margin-bottom: 20%;
+  margin-top: 10%;
 }
 
 .learn-section form {
-	margin-bottom: 20%;
+  margin-bottom: 20%;
+}
+
+@media (orientation: landscape) {
+  .learn-section form {
+    margin-bottom: 5%;
+  }
+  .learn-section h3 {
+    margin-bottom: 5%;
+    margin-top: 7%;
+  }
 }

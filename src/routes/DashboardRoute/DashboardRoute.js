@@ -38,8 +38,8 @@ class DashboardRoute extends Component {
           <button>Start Practicing</button>
         </Link>
         <h3>Words to practice</h3>
+        <h4>Total correct answers: {this.state.language.total_score}</h4>
         <div className="dash-ul-wrapper">
-          <h4>Total correct answers: {this.state.language.total_score}</h4>
           <ul className="dash-ul">
             <Word word={this.state.words[0]} />
             <Word word={this.state.words[1]} />
