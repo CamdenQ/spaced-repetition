@@ -1,8 +1,10 @@
 {
   "nextWord": "test-next-word-from-incorrect-guess",
-  "wordCorrectCount": 888,
-  "wordIncorrectCount": 111,
-  "totalScore": 999,
-  "answer": "test-answer-from-incorrect-guess",
+  "correct_count": 888,
+  "incorrect_count": 111,
+  "total_score": 999,
+  "translation": "test-translation-from-incorrect-guess",
+  "guess": "test-answer-from-incorrect-guess",
+  "original": "test-original-from-incorrect-guess",
   "isCorrect": false
 }
